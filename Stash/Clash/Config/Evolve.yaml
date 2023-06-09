@@ -261,6 +261,7 @@ rules: # 分流规则引用
   - RULE-SET,Apple,Apple
   - RULE-SET,Google,Google
   - RULE-SET,Microsoft,Microsoft
+  - RULE-SET,crypto,crypto
   - RULE-SET,Games,Games,no-resolve
   - RULE-SET,Global_Domain,Global
   - GEOIP,google,Google
