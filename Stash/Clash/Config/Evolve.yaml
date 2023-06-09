@@ -139,7 +139,7 @@ proxy-groups:    # 代理组
 - {name: Microsoft, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Microsoft.png, <<: *m}
 
 # crypto
-- {name: crypto, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Microsoft.png, <<: *m}
+- {name: crypto, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Want_Want_Letter.png, <<: *m}
 
 # 游戏平台
 - {name: Games, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Game.png, <<: *g}
@@ -227,7 +227,7 @@ rule-providers: # 远程规则集
 # 微软服务
  Microsoft: {<<: *d, path: ./ruleset/Microsoft.yaml, url: https://rules.kr328.app/microsoft.yaml}
 
-# 微软服务
+# crypto
  crypto: {<<: *d, path: ./ruleset/Cryptocurrency.yaml, url:  https://raw.githubusercontent.com/yawenchim/Clash/master/Ruleset/Cryptocurrency.list}
 
 # 游戏平台
