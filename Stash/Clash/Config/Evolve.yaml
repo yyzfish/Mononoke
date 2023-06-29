@@ -141,6 +141,9 @@ proxy-groups:    # 代理组
 # crypto
 - {name: crypto, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Want_Want_Letter.png, <<: *m}
 
+# OpenAI
+- {name: OpenAI, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Want_Want_Letter.png, <<: *m}
+
 # 游戏平台
 - {name: Games, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Game.png, <<: *g}
 
@@ -241,7 +244,7 @@ rule-providers: # 远程规则集
 
 rules: # 分流规则引用
   - RULE-SET,Private,DIRECT
-  - RULE-SET,OpenAI,America
+  - RULE-SET,OpenAI,OpenAI
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Netflix,NETFLIX
   - RULE-SET,Disney,Disney+
