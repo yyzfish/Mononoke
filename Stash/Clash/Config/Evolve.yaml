@@ -1,7 +1,7 @@
 # Stash/Clash/(Premium/Meta) Config Make by Coldvvater
 # TG Channel: https://t.me/Ison_Channel
 # GitHub: https://github.com/Coldvvater
-# Update Date: 2023.05.29
+# Update Date: 2023年08月15日
 
 # 自选GEOIP数据库推荐使用: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
 
@@ -171,7 +171,7 @@ rule-providers: # 远程规则集
  Private: {<<: *d, path: ./ruleset/Private.yaml, url: https://rules.kr328.app/private.yaml}
 
 # OpenAI
- OpenAI: {<<: *d, path: ./ruleset/OpenAI.yaml, url: https://rules.kr328.app/openai.yaml}
+ OpenAI: {<<: *d, path: ./ruleset/OpenAI.yaml, url: https://raw.githubusercontent.com/yyzfish/Mononoke/master/OpenAI.yaml}
 
 # 油管视频
  YouTube: {<<: *d, path: ./ruleset/YouTube.yaml, url: https://rules.kr328.app/youtube.yaml}

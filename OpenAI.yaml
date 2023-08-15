@@ -11,3 +11,4 @@ payload:
 - "openaicom.imgix.net"
 - "openaicomproductionae4b.blob.core.windows.net"
 - "production-openaicom-storage.azureedge.net"
+- "+.claude.ai"
