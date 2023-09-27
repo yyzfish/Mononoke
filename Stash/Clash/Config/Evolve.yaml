@@ -17,7 +17,6 @@ log-level: info       # 设置日志输出级别 (5 个级别：silent / error /
 
 ca: ''                # 以 PKCS #12 编码的 CA 证书
 ca-passphrase: ''     # 证书密码
-  
 mitm:                 # 开启 MitM 功能的域名列表，需要确保上述 CA 证书已受系统信任
   - g.cn
   - '*.google.cn'
