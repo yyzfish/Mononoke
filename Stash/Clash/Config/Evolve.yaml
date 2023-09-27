@@ -131,7 +131,7 @@ proxy-groups:    # 代理组
 # crypto
  - {name: crypto, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Want_Want_Letter.png, <<: *m}
 
- # personal
+# personal
  - {name: personal, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Want_Want_Letter.png, <<: *m}
 
 # 游戏平台
