@@ -14,18 +14,6 @@ ipv6: true            # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接�
 mode: rule            # 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）/ script (脚本)
 log-level: info       # 设置日志输出级别 (5 个级别：silent / error / warning / info / debug）
 
-
-ca: ''                # 以 PKCS #12 编码的 CA 证书
-ca-passphrase: ''     # 证书密码
-mitm:                 # 开启 MitM 功能的域名列表，需要确保上述 CA 证书已受系统信任
-  - g.cn
-  - '*.google.cn'
-  - weather-data.apple.com # 默认只对 443 端口开启
-  - weather-data.apple.com:* # 使用通配符对所有端口开启
-  - '*.weather-data.apple.com' # 域名中也可以使用通配符
-  - '-exclude.weather-data.apple.com' # 用-前缀排除域名
- 
-
 external-controller: 127.0.0.1:9090   # 外部控制器监听地址，可以使用 RESTful API 来控制你的 clash 内核
 
 dns:
@@ -62,7 +50,7 @@ proxies:   # 本地服务器
 u: &u {type: select, use: [Subscribe]}
 
 proxy-providers: # 远程订阅
-  MySubs: {<<: *p, path: ./proxy_providers/mysubs.yaml, url: "http://sub.store/download/collection/MySub"}
+  Subscribe: {<<: *p, path: ./proxy_providers/subscribe.yaml, url: ""}
 # 1. 请使用Clash类型订阅链接填入引号""内使用,
 # 2. 或可使用通用订阅链接通过Sub-Store进行订阅转换(用于Stash)。
 
@@ -127,12 +115,6 @@ proxy-groups:    # 代理组
 
 # 微软服务
  - {name: Microsoft, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Microsoft.png, <<: *m}
-
-# crypto
- - {name: crypto, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Want_Want_Letter.png, <<: *m}
-
-# personal
- - {name: personal, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Want_Want_Letter.png, <<: *m}
 
 # 游戏平台
  - {name: Games, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Game.png, <<: *g}
@@ -223,12 +205,6 @@ rule-providers: # 远程规则集
 # 微软服务
  Microsoft: {<<: *d, path: ./ruleset/Microsoft.yaml, url: https://rules.kr328.app/microsoft.yaml}
 
-# crypto
- crypto: {<<: *d, path: ./ruleset/Cryptocurrency.yaml, url:  https://raw.githubusercontent.com/yawenchim/Clash/master/Ruleset/Cryptocurrency.list}
-
- # personal
- personal: {<<: *d, path: ./ruleset/personal.yaml, url:  https://raw.githubusercontent.com/yyzfish/Mononoke/master/Stash/RuleSet/personal.yaml}
-
 # 游戏平台
  Games: {<<: *c, path: ./ruleset/Games.yaml, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Game/Game_No_Resolve.yaml}
 
@@ -262,8 +238,6 @@ rules: # 分流规则引用
   - RULE-SET,Apple,Apple
   - RULE-SET,Google,Google
   - RULE-SET,Microsoft,Microsoft
-  - RULE-SET,crypto,crypto
-  - RULE-SET,personal,personal
   - RULE-SET,Games,Games
   - RULE-SET,Global,Global
   - GEOIP,google,Google
