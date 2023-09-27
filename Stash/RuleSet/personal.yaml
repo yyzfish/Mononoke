@@ -1,5 +1,2 @@
-# OpenAI
-
 payload:
-  - DOMAIN-SUFFIX,cointool.app
-
+- "+.cointool.app"
