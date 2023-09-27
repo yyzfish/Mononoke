@@ -129,11 +129,12 @@ proxy-groups:    # 代理组
 # 微软服务
  - {name: Microsoft, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Microsoft.png, <<: *m}
 
+
 # crypto
-- {name: crypto, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Want_Want_Letter.png, <<: *m}
+ - {name: crypto, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Want_Want_Letter.png, <<: *m}
 
 # OpenAI
-- {name: OpenAI, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Want_Want_Letter.png, <<: *m}
+ - {name: OpenAI, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Want_Want_Letter.png, <<: *m}
 
 # 游戏平台
  - {name: Games, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Game.png, <<: *g}
