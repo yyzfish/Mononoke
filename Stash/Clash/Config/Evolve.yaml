@@ -77,9 +77,6 @@ proxy-groups:    # 代理组
 # 人工智能
  - {name: OpenAI, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Bot.png, <<: *g, proxies: [America,Japan,Singapore,TaiWan,Others]}
 
-# personal
- - {name: personal, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Bot.png, <<: *g, proxies: [America,Japan,Singapore,TaiWan,Others]}
-
 # 油管视频
  - {name: YouTube, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/YouTube.png, <<: *g}
 
@@ -150,9 +147,6 @@ rule-providers: # 远程规则集
 
 # 人工智能
  OpenAI: {<<: *c, path: ./ruleset/OpenAI.yaml, url: https://cdn.jsdelivr.net/gh/Coldvvater/Mononoke@master/Stash/RuleSet/OpenAI.yaml}
-
-# personal
- personal: {<<: *c, path: ./ruleset/OpenAI.yaml, url: https://raw.githubusercontent.com/yyzfish/Mononoke/master/Stash/RuleSet/personal.yaml}
 
 # 油管视频
  YouTube: {<<: *d, path: ./ruleset/YouTube.yaml, url: https://rules.kr328.app/youtube.yaml}
